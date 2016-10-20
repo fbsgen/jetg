@@ -8,7 +8,11 @@
 
 #test (String lastName, String firstName, int age)
     name: «lastName», «firstName»
-    age: «age»
+    «age(age)»
+#end
+
+#age(int age)
+age: «age»
 #end
 
 #foo(int item, String suffix)
