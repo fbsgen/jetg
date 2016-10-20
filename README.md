@@ -70,7 +70,7 @@ The goal of the modifications was to make it syntactically and semantically simi
   ```
   «some_string_list:String:test("John", 10); separator="\n"»  
   ```
-  The difference is ```:String``` which indicates the type of the first argument being passed to the proc
+  The difference is the presence of ```:String``` which indicates the type of the first argument being passed to the proc
 
 ### Usage
 ```java
