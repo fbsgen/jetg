@@ -110,7 +110,8 @@ public final class Stock
     private double ratio;
 
     public Stock(String name, String name2, String url, String symbol, 
-            double price, double change, double ratio) {
+            double price, double change, double ratio)
+    {
         this.name = name;
         this.name2 = name2;
         this.url = url;
