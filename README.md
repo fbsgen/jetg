@@ -29,7 +29,8 @@ The goal of the modifications were to make it syntactically and semantically sim
   ```
 - Procs
   - a.k.a reusable stateless functions (public static)
-  - *proc.jetg*
+  - ```proc.jetg```
+  
   ```
   «test("Doe", "John", 10)»
   
@@ -61,7 +62,11 @@ The goal of the modifications were to make it syntactically and semantically sim
   age: «age»
   #end
   ```
-
+- Iteration similar to ST4
+  ```
+  «some_string_list:String:test("John", 10); separator="\n"»  
+  ```
+  The difference is ```:String:``` which indicates the type of the first argument being passed to the proc
 
 ### Usage
 ```java
