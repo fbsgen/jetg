@@ -10,6 +10,58 @@ Credits:
 
 The goal of the modifications were to make it syntactically and semantically similar to how I generate code via ST4.
 
+### Overview
+- control chars (escape using backlash) :
+  ```
+  #
+  «
+  »
+  ```
+- Comments
+  ```
+  ## this is a comment
+  ```
+- Comment block
+  ```
+  #--
+  this is a comment
+  --#
+  ```
+- Procs
+  - a.k.a reusable stateless functions (public static)
+  - *proc.jetg*
+  ```
+  #test (String lastName, String firstName, int age)
+  name: «lastName», «firstName»
+  age: «age»
+  #end
+  ```
+  - call the proc via ```«test("Doe", "John", 10)»```
+  
+- Imports
+  - the imported procs are namespaced using the proc's filename with ```::``` as separator similar to c++
+  - the ```.jetg``` suffix is inferred
+  
+  ```
+  #import proc
+  #import ./proc.html
+  #set(ln = "Doe")
+
+  «proc::test(ln, "John", 10)»
+  «proc_html::test(ln, "Jane", 11)»
+  «test(ln, "Joe", 12)»
+
+  #test (String lastName, String firstName, int age)
+      name: «lastName», «firstName»
+      «age(age)»
+  #end
+  
+  #age(int age)
+  age: «age»
+  #end
+  ```
+
+
 ### Usage
 ```java
 Properties props = new Properties();
