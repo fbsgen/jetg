@@ -11,7 +11,7 @@ Credits:
 The goal of the modifications were to make it syntactically and semantically similar to how I generate code via ST4.
 
 ### Overview
-- control chars (escape using backlash) :
+- control chars (escape using backslash) :
   ```
   #
   «
