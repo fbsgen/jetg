@@ -1,0 +1,7 @@
+«table(9)»
+#table(int n)
+    «n» * «n» = «n * n»
+#if(n>1)
+«table(n-1)»
+#endif
+#end

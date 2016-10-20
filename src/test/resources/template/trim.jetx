@@ -1,0 +1,4 @@
+#if (true) abc
+    0123
+#endif 999
+AAA

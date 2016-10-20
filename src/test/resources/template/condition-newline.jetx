@@ -1,0 +1,8 @@
+#set(obj = "123")
+
+#if (obj)
+    name: «user.name» «obj» 0
+#endif
+#if (obj)
+    name: «user.name» «obj» 1
+#endif

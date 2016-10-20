@@ -1,0 +1,23 @@
+#set(ln = "Doe")
+
+«test(ln, "John", 10)»
+«test(ln, "Jane", 11)»
+
+#test (String lastName, String firstName, int age)
+    name: «lastName», «firstName»
+    age: «age»
+#end
+
+#separator(Object it, String param, int i)
+«#emit»
+if (i != 0) $out.print(param);
+«#»
+#end
+
+#repeat(String text, int count)
+«#emit»
+StringBuilder sb = new StringBuilder();
+while (count-- > 0) sb.append(text);
+$out.print(sb.toString());
+«#»
+#end

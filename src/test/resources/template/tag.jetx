@@ -1,0 +1,8 @@
+#set(obj = "123")
+#tag testTag()
+    name: «user.name» «obj»
+#end
+
+#tag testTag("HELLO!")
+    name: «user.name» «obj»
+#end

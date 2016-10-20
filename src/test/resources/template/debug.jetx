@@ -1,0 +1,2 @@
+«debug("aaa")»
+«debug("aaa = {}, {}", "aaa", 123)»

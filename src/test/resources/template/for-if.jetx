@@ -1,0 +1,7 @@
+#define(int[] array)
+#for (x : array)
+    «x»
+    #if (x > 2.0) 
+        it is a big integer.
+    #endif
+#endfor

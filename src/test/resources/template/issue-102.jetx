@@ -1,0 +1,7 @@
+#macro table(int n)
+    «n» * «n» = «n * n»
+#if(n>1)
+#call table(n-1)
+#endif
+#end
+#call table(9)

@@ -1,0 +1,11 @@
+========
+if statement flag==false
+========
+elseif statement flag==false
+========
+else statement flag==false
+========
+for statement true
+========
+else statement false
+========

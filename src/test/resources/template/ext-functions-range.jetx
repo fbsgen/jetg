@@ -1,0 +1,6 @@
+#for (int i: loop(8,10))
+    «i»
+#endfor
+#for (int i: loop(10,1,-2))
+    «i»
+#endfor

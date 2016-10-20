@@ -1,0 +1,11 @@
+========
+if statement #if(!flag)flag==false#endif
+========
+elseif statement #if(flag)flag==true#elseif(!flag)flag==false#endif
+========
+else statement #if(flag)flag==true#else()flag==false#endif
+========
+for statement #for(int i : [0])true#else()false#endfor
+========
+else statement #for(int i : [])true#else()false#endfor
+========

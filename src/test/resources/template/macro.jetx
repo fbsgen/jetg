@@ -1,0 +1,7 @@
+#macro test(int status)
+    name: «user.name» «obj» «status»
+#end
+#set(obj = "123")
+
+#call test(0)
+#call test(1)

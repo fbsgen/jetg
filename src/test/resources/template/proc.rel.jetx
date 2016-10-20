@@ -1,0 +1,20 @@
+#import proc
+#import ./proc.html
+#set(ln = "Doe")
+
+«proc::test(ln, "John", 10)»
+«proc_html::test(ln, "Jane", 11)»
+«test(ln, "Joe", 12)»
+
+#test (String lastName, String firstName, int age)
+    name: «lastName», «firstName»
+    age: «age»
+#end
+
+#foo(int item, String suffix)
+«item»«suffix»
+#end
+
+#foo_block(int item)
+foo_block: «item»
+#end
