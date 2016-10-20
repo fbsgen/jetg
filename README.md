@@ -39,6 +39,7 @@ System.out.println(writer.toString());
 ```
 
 ### template
+stocks.jetg
 ```html
 #define (List<foo.Stock> items)
 «main(items)»
@@ -94,6 +95,7 @@ System.out.println(writer.toString());
 ```
 
 ### pojo
+Stock.java
 ```java
 package foo;
 
