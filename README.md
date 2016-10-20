@@ -31,12 +31,12 @@ The goal of the modifications were to make it syntactically and semantically sim
   - a.k.a reusable stateless functions (public static)
   - *proc.jetg*
   ```
+  «test("Doe", "John", 10)»
   #test (String lastName, String firstName, int age)
   name: «lastName», «firstName»
   age: «age»
   #end
   ```
-  - call the proc via ```«test("Doe", "John", 10)»```
   
 - Imports
   - the imported procs are namespaced using the proc's filename with ```::``` as separator similar to c++
