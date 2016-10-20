@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dyuproject.jetg</groupId>
   <artifactId>jetg</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>jetg</name>
   <description>compiled template engine for java</description>
