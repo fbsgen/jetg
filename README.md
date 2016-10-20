@@ -63,7 +63,7 @@ stocks.jetg
         </tr>
       </thead>
       <tbody>
-        «for(Stock item : items)»
+        «for(foo.Stock item : items)»
         «item_detail(item, item$$i + 1)»
         «endfor»
       </tbody>
