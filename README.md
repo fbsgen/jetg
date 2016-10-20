@@ -8,20 +8,23 @@ Build requirements:
 Credits:
  - [@subchen](https://github.com/subchen) - author of https://github.com/subchen/jetbrick-template-1x where this project was based from.
 
-The goal of the modifications were to make it syntactically and semantically similar to how I generate code via ST4.
+The goal of the modifications was to make it syntactically and semantically similar to how I generate code via ST4.
 
 ### Overview
 - control chars (escape using backslash) :
+  
   ```
   #
   «
   »
   ```
 - Comments
+  
   ```
   ## this is a comment
   ```
 - Comment block
+  
   ```
   #--
   this is a comment
@@ -63,10 +66,11 @@ The goal of the modifications were to make it syntactically and semantically sim
   #end
   ```
 - Iteration similar to ST4
+  
   ```
   «some_string_list:String:test("John", 10); separator="\n"»  
   ```
-  The difference is ```:String:``` which indicates the type of the first argument being passed to the proc
+  The difference is ```:String``` which indicates the type of the first argument being passed to the proc
 
 ### Usage
 ```java
