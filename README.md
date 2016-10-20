@@ -32,6 +32,7 @@ The goal of the modifications were to make it syntactically and semantically sim
   - *proc.jetg*
   ```
   «test("Doe", "John", 10)»
+  
   #test (String lastName, String firstName, int age)
   name: «lastName», «firstName»
   age: «age»
