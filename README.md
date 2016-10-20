@@ -13,7 +13,7 @@ Credits:
 ### Usage
 ```java
 Properties props = new Properties();
-props.setProperty(JetConfig.COMPILE_DEBUG, "false");
+props.put(JetConfig.COMPILE_DEBUG, "false");
 props.put(JetConfig.TEMPLATE_LOADER, ClasspathResourceLoader.class.getName());
 props.put(JetConfig.TEMPLATE_PATH, "/");
 props.put(JetConfig.COMPILE_STRATEGY, "auto");
