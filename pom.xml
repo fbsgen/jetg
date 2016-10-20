@@ -20,7 +20,6 @@
     <connection>scm:git:git@github.com:fbsgen/jetg.git</connection>
     <developerConnection>scm:git:git@github.com:fbsgen/jetg.git</developerConnection>
     <url>https://github.com/fbsgen/jetg.git</url>
-    <tag>jetg-1.0.0-SNAPSHOT</tag>
   </scm>
   <licenses>
     <license>
