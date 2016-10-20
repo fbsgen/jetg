@@ -11,7 +11,7 @@ PR_VERSION=$2
 
 echo "Releasing $VERSION - are you sure? (y/n):" && read CONFIRM && [ "$CONFIRM" != "y" ] && exit 0
 
-[ ! -n "$MVN"] && MVN=mvn
+[ ! -n "$MVN" ] && MVN=mvn
 
 $MVN versions:set -DnewVersion=$VERSION && \
 git clean -f && git add -u && git commit -m "$VERSION" && \
