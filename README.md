@@ -97,9 +97,6 @@ System.out.println(writer.toString());
 ```java
 package foo;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Stock {
 
     private String name;
