@@ -11,11 +11,9 @@ PR_VERSION=$2
 
 echo "Releasing $VERSION - are you sure? (y/n):" && read CONFIRM && [ "$CONFIRM" != "y" ] && exit 0
 
-[ ! -n "$MVN" ] && MVN=mvn
-
-$MVN versions:set -DnewVersion=$VERSION && \
-git clean -f && git add -u && git commit -m "$VERSION" && \
-$MVN -Prelease deploy && $MVN scm:tag && \
-$MVN versions:set -DnewVersion=$PR_VERSION && \
-git clean -f && git add -u && git commit -m "$PR_VERSION" && \
+mvn versions:set -DnewVersion=$VERSION -DgenerateBackupPoms=false && \
+git add -u . && git commit -m "$VERSION" && \
+mvn -Prelease deploy && mvn scm:tag && \
+mvn versions:set -DnewVersion=$PR_VERSION -DgenerateBackupPoms=false && \
+git add -u . && git commit -m "$PR_VERSION" && \
 git push origin master
